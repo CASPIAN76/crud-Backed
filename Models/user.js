@@ -6,10 +6,10 @@ const UserSchema = new mongoose.Schema({
     fname:{ type:String,require:true   },
     lname:{type:String, require:true},
     email :{type:String, require:true, unique:true},
-    age:{type:String, require:true},
+    age:{type:Number, require:true},
     city:{type:String, require:true},
     state:{type:String, require:true},
-    dob:{type:String, require:true},
+    dob:{type:Date, require:true},
     gender:{type:String, require:true}
   
 
